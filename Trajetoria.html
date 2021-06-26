@@ -43,7 +43,7 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-palette-2-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-active-palette-2-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="Introdução.html" style="padding: 10px 20px;">Introdução</a>
-</li><li class="u-nav-item"><a class="u-active-palette-2-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="ParamMod.html" style="padding: 10px 20px;">MATLAB</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ParamMod.html">Parametros e Modelação</a>
+</li><li class="u-nav-item"><a class="u-active-palette-2-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" style="padding: 10px 20px;">MATLAB</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ParamMod.html">Parametros e Modelação</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Cinematica.html">Cinemática Direta e Inversa</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Trajetoria.html">Trajetórias</a>
 </li></ul>
@@ -58,7 +58,7 @@
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Introdução.html" style="padding: 10px 20px;">Introdução</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ParamMod.html" style="padding: 10px 20px;">MATLAB</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ParamMod.html">Parametros e Modelação</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">MATLAB</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ParamMod.html">Parametros e Modelação</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Cinematica.html">Cinemática Direta e Inversa</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Trajetoria.html">Trajetórias</a>
 </li></ul>
@@ -128,7 +128,7 @@
                       <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-3">
                         <div class="u-container-layout u-container-layout-3">
                           <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-2" src="images/MovGoToObjectTOPCinematica.gif" alt="" data-image-width="559" data-image-height="660">
-                          <p class="u-text u-text-default u-text-4">Fig.2- Movimento angular do sawyer a um objecto (vista de cima)</p>
+                          <p class="u-text u-text-4">Fig.2- Movimento angular do sawyer a um objecto (vista de cima)</p>
                         </div>
                       </div>
                     </div>
@@ -189,8 +189,8 @@
                         <br>mov = jtraj(posicao1, posicao2, t);<span class="u-text-palette-4-base"> % Trajetória das coordenadas das juntas</span>
                         <br>
                         <br>figure(1); <br>
-                        <br>for i=1:1:7 <br> subplot(7,1,i) <br> plot(t,mov(:,i)); <span class="u-text-palette-4-base">% Gráfico da posição angular da junta i variando no tempo </span>
-                        <br> title('Theta'); <br> xlabel('Tempo (s)'); <br> ylabel(strcat({'Junta '},string(i),{' (rad)'})); <br>end;
+                        <br>for i=1:1:7 <br>&nbsp; &nbsp;&nbsp;subplot(7,1,i) <br>&nbsp; &nbsp;&nbsp;plot(t,mov(:,i)); <span class="u-text-palette-4-base">% Gráfico da posição angular da junta i variando no tempo </span>
+                        <br>&nbsp; &nbsp;&nbsp;title('Theta'); <br>&nbsp; &nbsp;&nbsp;xlabel('Tempo (s)'); <br>&nbsp; &nbsp;&nbsp;ylabel(strcat({'Junta '},string(i),{' (rad)'})); <br>end;
                       </p>
                     </div>
                   </div>
@@ -325,8 +325,9 @@
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="225" data-image-height="225">
           <img src="images/UAL.png" class="u-logo-image u-logo-image-1" data-image-width="80">
         </a>
-        <p class="u-align-right u-text u-text-1">Trabalho Realizado Por:<br>Nuno Cruz<br>Paulo Bastos<br>Ulisses Pinto
+        <p class="u-align-right u-text u-text-1"><b>Trabalho Realizado Por:</b>&nbsp; &nbsp;&nbsp;<br>Nuno Cruz&nbsp; &nbsp; &nbsp; &nbsp;Nº 30003482<br>Paulo Bastos&nbsp; &nbsp;Nº 19980708<br>Ulisses Pinto&nbsp; &nbsp;Nº 30002889
         </p>
+        <p class="u-align-right u-text u-text-2">Trabalho de Robótica 3º Ano Pós Laboral</p>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="https://nicepage.com/website-design" target="_blank">
