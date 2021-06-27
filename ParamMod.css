@@ -610,6 +610,12 @@
   font-style: italic;
 }
 
+.u-section-4 .u-btn-1 {
+  background-image: none;
+  font-style: italic;
+  padding: 0;
+}
+
 .u-section-4 .u-text-6 {
   margin-left: 0;
   font-size: 0.75rem;

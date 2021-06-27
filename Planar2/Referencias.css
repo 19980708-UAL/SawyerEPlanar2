@@ -1,0 +1,19 @@
+.u-section-1 {
+  background-image: linear-gradient(#e5e5e5, white);
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 76px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 20px auto;
+}.u-section-2 .u-sheet-1 {
+  min-height: 376px;
+}
+
+.u-section-2 .u-text-1 {
+  margin-bottom: 32px;
+  line-height: 2.2;
+  font-size: 1.5rem;
+}

@@ -107,10 +107,21 @@
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-container-layout-1">
                       <h5 class="u-text u-text-1">Introdução</h5>
-                      <p class="u-text u-text-2">Neste exemplo também vamos utilizar a introdução de um objecto (copo) e uma superficie (mesa), e criar a mesma simulação feita na cinemática, defenindo uma trajetória&nbsp;final.<br>
+                      <p class="u-align-justify u-text u-text-2">Neste exemplo também vamos utilizar a introdução de um objecto (copo) e uma superficie (mesa), e criar a mesma simulação feita na cinemática, defenindo uma trajetória&nbsp;final.<br>
                         <br>Como podemos ver(Figura 2), o Robot Sawyer não precisa de muito espaço para operar.<br>
                         <br>Na figura 3 vemos as posições das juntas por tempo, ou seja em que posição a junta se encontrava em cada 0.05 segundos
                       </p>
+                      <p class="u-align-justify u-text u-text-3">O primeiro problema que se põem, é que não se trabalha com o end-effector (posição do ponto para onde queremos que o robo ponha o seu punho), mas sim com as rotações das juntas.&nbsp;&nbsp;</p>
+                      <p class="u-align-justify u-text u-text-4">Então primeiro é preciso saber o que cada junta precisa de rodar para ter o end-effector desejado.<br>Para isso podemos utilizar o método teach e assim criamos uma tabela com esses valores:&nbsp;
+                      </p>
+                      <img class="u-image u-image-default u-image-1" src="images/TabelaSawyerPosicaoTraj.JPG" alt="" data-image-width="529" data-image-height="74">
+                      <p class="u-align-justify u-text u-text-5">Encontrado os valores da rotação para cada junta em cada posição, ou seja definir o posição inicial ao posição final, que será o trajecto que o robo terá de fazer.</p>
+                      <p class="u-align-justify u-text u-text-6">Foi aplicado um tempo de 2 segundo para o desenho de cada traço e associado a uma variável t, que foi necessária para definir o trajeto entre ponto com a função jtraj, que calcula o movimento do robor entre os dois ponto defenidos.</p>
+                      <ul class="u-align-justify u-text u-text-7">
+                        <li>jtraj(posicao1, posicao2, t)<br>
+                        </li>
+                      </ul>
+                      <p class="u-align-justify u-text u-text-8">Então com tudo defenido, é so fazer plot do movimento gerado, e o Sawyer já vai até aso copo.</p>
                     </div>
                   </div>
                 </div>
@@ -121,14 +132,14 @@
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                         <div class="u-container-layout u-container-layout-2">
-                          <img class="u-border-1 u-border-grey-75 u-expanded-width u-image u-image-round u-image-1" src="images/MovGoToObject.gif" alt="" data-image-width="515" data-image-height="549">
-                          <p class="u-align-center u-text u-text-3">Fig.1- Movimento angular do sawyer a um objecto</p>
+                          <img class="u-border-1 u-border-grey-75 u-expanded-width u-image u-image-round u-image-2" src="images/MovGoToObject.gif" alt="" data-image-width="515" data-image-height="549">
+                          <p class="u-align-center u-text u-text-9">Fig.1- Movimento angular do sawyer a um objecto</p>
                         </div>
                       </div>
                       <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-3">
                         <div class="u-container-layout u-container-layout-3">
-                          <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-2" src="images/MovGoToObjectTOPCinematica.gif" alt="" data-image-width="559" data-image-height="660">
-                          <p class="u-text u-text-4">Fig.2- Movimento angular do sawyer a um objecto (vista de cima)</p>
+                          <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-3" src="images/MovGoToObjectTOPCinematica.gif" alt="" data-image-width="559" data-image-height="660">
+                          <p class="u-text u-text-10">Fig.2- Movimento angular do sawyer a um objecto (vista de cima)</p>
                         </div>
                       </div>
                     </div>
@@ -137,8 +148,8 @@
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-4">
                         <div class="u-container-layout u-container-layout-4">
-                          <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-3" src="images/TabelaCordenadaJuntasTempo.JPG" alt="" data-image-width="591" data-image-height="869">
-                          <p class="u-align-center u-text u-text-default u-text-5">Fig.3- Tabela com as posições da juntas e nos respetivos tempos onde se encontram</p>
+                          <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-4" src="images/TabelaCordenadaJuntasTempo.JPG" alt="" data-image-width="591" data-image-height="869">
+                          <p class="u-align-center u-text u-text-default u-text-11">Fig.3- Tabela com as posições da juntas e nos respetivos tempos onde se encontram</p>
                         </div>
                       </div>
                     </div>
@@ -148,10 +159,19 @@
             </div>
           </div>
         </div>
+        <div class="u-align-center u-border-2 u-border-grey-75 u-container-style u-group u-radius-33 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-5">
+            <h6 class="u-text u-text-12">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://github.com/19980708-UAL/SawyerEPlanar2/blob/main/SawyerCinematica/ScriptGoToObjectCinDirInv.m" target="_blank"><i>
+                  <span style="font-weight: 700;">Script&nbsp;&nbsp;</span>ScriptGoToObjectCinDirInv.m</i>
+              </a>
+            </h6>
+          </div>
+        </div>
       </div>
     </section>
     <section class="u-border-1 u-border-grey-75 u-clearfix u-lightbox u-section-3" id="sec-b62c">
-      <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
@@ -176,8 +196,10 @@
                   <div class="u-container-style u-layout-cell u-radius-33 u-shape-round u-size-30 u-layout-cell-3">
                     <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-3">
                       <h6 class="u-text u-text-4">
-                        <span style="font-weight: 700;">Script&nbsp;</span>
-                        <span style="font-style: italic;">GraphPosJunta.m</span>
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://github.com/19980708-UAL/SawyerEPlanar2/blob/main/SawyerCinematica/GraphCinPosJunta.m" target="_blank">
+                          <span style="font-weight: 700;">Script&nbsp;</span>
+                          <span style="font-style: italic;">GraphPosJunta.m</span>
+                        </a>
                       </h6>
                       <p class="u-text u-text-5">mdl_sawyer <span class="u-text-palette-4-base">%Load do Modelo Sawyer </span>
                         <br>
@@ -210,10 +232,9 @@
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-container-layout-1">
-                      <h5 class="u-text u-text-default u-text-1">Trajetória&nbsp;</h5>
-                      <h6 class="u-text u-text-2">Gráficos de Posição, Velocidade e Acelaração Angulares</h6>
-                      <h6 class="u-text u-text-3">Por junta</h6>
-                      <p class="u-text u-text-4">Mais uma vez se verifica q não existe nenhum movimento na 4ª e na 6ª junta, como se verifica na figura 5</p>
+                      <h5 class="u-text u-text-1">Gráficos de Posição, Velocidade e Acelaração Angulares</h5>
+                      <h6 class="u-text u-text-2">Por junta</h6>
+                      <p class="u-text u-text-3">Mais uma vez se verifica q não existe nenhum movimento na 4ª e na 6ª junta, como se verifica na figura 5</p>
                     </div>
                   </div>
                 </div>
@@ -229,16 +250,18 @@
                       <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-5" src="images/GraficoTrajJunta5.jpg" alt="" data-image-width="560" data-image-height="420">
                       <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-6" src="images/GraficoTrajJunta6.jpg" alt="" data-image-width="560" data-image-height="420">
                       <img class="u-border-1 u-border-grey-75 u-image u-image-default u-image-7" src="images/GraficoTrajJunta7.jpg" alt="" data-image-width="560" data-image-height="420">
-                      <p class="u-align-center u-text u-text-5">
+                      <p class="u-align-center u-text u-text-4">
                         <span style="font-size: 0.625rem; font-weight: 700; font-style: italic;">Fig.5- Gráficos da posição angular, velocidade angular e acelaração angular por junta(1-7)</span>&nbsp;
                       </p>
                     </div>
                   </div>
                   <div class="u-container-style u-layout-cell u-radius-33 u-size-30 u-layout-cell-3">
                     <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-3">
-                      <h6 class="u-text u-text-6"><b>Script&nbsp;</b>GraphTranjporJunta.m
+                      <h6 class="u-text u-text-5">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://github.com/19980708-UAL/SawyerEPlanar2/blob/main/SawyerCinematica/GraphCinTranjporJunta.m" target="_blank"><b>Script&nbsp;</b>GraphTranjporJunta.m
+                        </a>
                       </h6>
-                      <p class="u-text u-text-7">mdl_sawyer <span class="u-text-palette-4-base">%Load do Modelo Sawyer </span>
+                      <p class="u-text u-text-6">mdl_sawyer <span class="u-text-palette-4-base">%Load do Modelo Sawyer </span>
                         <br>
                         <br>t = [0:.05:2]; <span class="u-text-palette-4-base">% Tempo da transição: 1 a 2 com incrementação de 0.5 </span>
                         <br>
@@ -274,9 +297,8 @@
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-container-layout-1">
-                      <h5 class="u-text u-text-1">Trajetória</h5>
-                      <h6 class="u-text u-text-2">Gráficos de Posição, Velocidade e Acelaração Angulares</h6>
-                      <p class="u-text u-text-3">Verifica-se que existe uma acelaração em todos os eixo até ao 1º se gundo, e uma desacelaração a medida que se aproxima da posição final&nbsp;</p>
+                      <h5 class="u-text u-text-1">Gráficos de Posição, Velocidade e Acelaração Angulares</h5>
+                      <p class="u-text u-text-2">Verifica-se que existe uma acelaração em todos os eixo até ao 1º se gundo, e uma desacelaração a medida que se aproxima da posição final&nbsp;</p>
                     </div>
                   </div>
                 </div>
@@ -287,16 +309,18 @@
                     <div class="u-border-1 u-border-grey-75 u-container-layout u-container-layout-2">
                       <img class="u-image u-image-default u-image-1" src="images/GraficoTrajPVAT.jpg" alt="" data-image-width="560" data-image-height="420">
                       <img class="u-image u-image-default u-image-2" src="images/GraficoTrajPVAxyz.jpg" alt="" data-image-width="560" data-image-height="420">
-                      <p class="u-align-center u-text u-text-default u-text-4">
+                      <p class="u-align-center u-text u-text-default u-text-3">
                         <span style="font-weight: 700; font-style: italic;">Fig.6- Gráficos da posição angular, velocidade angular e acelaração angular</span>
                       </p>
                     </div>
                   </div>
                   <div class="u-container-style u-layout-cell u-radius-33 u-size-30 u-layout-cell-3">
                     <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-3">
-                      <h5 class="u-text u-text-default u-text-5"><b>Script&nbsp;</b>GraphTranjTotal.m
+                      <h5 class="u-text u-text-default u-text-4">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://github.com/19980708-UAL/SawyerEPlanar2/blob/main/SawyerCinematica/GraphCinTranjTotal.m" target="_blank"><b>Script&nbsp;</b>GraphTranjTotal.m
+                        </a>
                       </h5>
-                      <p class="u-text u-text-6">mdl_sawyer <span class="u-text-palette-4-base">%Load do Modelo Sawyer </span>
+                      <p class="u-text u-text-5">mdl_sawyer <span class="u-text-palette-4-base">%Load do Modelo Sawyer </span>
                         <br>
                         <br>t = [0:.05:2]; <span class="u-text-palette-4-base">% Tempo da transição: 1 a 2 com incrementação de 0.5 </span>
                         <br>
@@ -329,5 +353,16 @@
         </p>
         <p class="u-align-right u-text u-text-2">Trabalho de Robótica 3º Ano Pós Laboral</p>
       </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-design" target="_blank">
+        <span>Best Website Design</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/" target="_blank">
+        <span>WYSIWYG Web Builder</span>
+      </a>. 
+    </section>
   </body>
 </html>
