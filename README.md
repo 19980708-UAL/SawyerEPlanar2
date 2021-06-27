@@ -1,4 +1,4 @@
-# SawyerEPlanar2<br>
+# Sawyer e Planar2<br>
 Projecto da Cadeira de Robótica - UAL 2021<br>
 
 Realizador Por:<br>
