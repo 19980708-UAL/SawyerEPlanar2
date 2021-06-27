@@ -9,5 +9,5 @@ Realizador Por:<br>
 Scripts gerados para criar o trabalho sobre os Robos Sawyer e Planar2<br>
 <br>
 Link:
-  Sawyer - <br>
-  Planar2 -<br>
+  Sawyer - <a href="https://19980708-ual.github.io/SawyerEPlanar2/">https://19980708-ual.github.io/SawyerEPlanar2/</a><br>
+  Planar2 -<a href="https://github.com/19980708-UAL/SawyerEPlanar2">https://github.com/19980708-UAL/SawyerEPlanar2</a><br>
