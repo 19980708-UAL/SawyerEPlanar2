@@ -33762,48 +33762,126 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 118px;
+  min-height: 171px;
 }
 
-.u-footer .u-text-1 {
-  margin: 47px auto 0;
+.u-footer .u-layout-wrap-1 {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.u-footer .u-layout-cell-1 {
+  min-height: 145px;
+}
+
+.u-footer .u-container-layout-1 {
+  padding: 30px 21px;
 }
 
 .u-footer .u-image-1 {
-  margin: -53px auto 0 0;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 0 0;
 }
 
-.u-footer .u-logo-image-1 {
-  max-width: 80px;
-  max-height: 80px;
+.u-footer .u-layout-cell-2 {
+  min-height: 145px;
+}
+
+.u-footer .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-footer .u-text-1 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.u-footer .u-layout-cell-3 {
+  min-height: 145px;
+}
+
+.u-footer .u-container-layout-3 {
+  padding: 23px 11px;
 }
 
 .u-footer .u-text-2 {
-  margin: -90px 0 9px 933px;
+  margin: 0 13px 0 50px;
 }
 @media (max-width: 1199px) {
+  .u-footer .u-sheet-1 {
+    min-height: 104px;
+  }
+
+  .u-footer .u-layout-cell-1 {
+    min-height: 120px;
+  }
+
   .u-footer .u-image-1 {
-    margin-top: -53px;
+    margin-left: 0;
+  }
+
+  .u-footer .u-layout-cell-2 {
+    min-height: 120px;
+  }
+
+  .u-footer .u-layout-cell-3 {
+    min-height: 120px;
   }
 
   .u-footer .u-text-2 {
-    margin-top: -90px;
-    margin-left: 733px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 @media (max-width: 991px) {
-  .u-footer .u-text-2 {
-    margin-left: 513px;
+  .u-footer .u-sheet-1 {
+    min-height: 86px;
+  }
+
+  .u-footer .u-layout-cell-1 {
+    min-height: 92px;
+  }
+
+  .u-footer .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-footer .u-layout-cell-3 {
+    min-height: 100px;
   }
 }
 @media (max-width: 767px) {
-  .u-footer .u-text-2 {
-    margin-left: 333px;
+  .u-footer .u-sheet-1 {
+    min-height: 296px;
+  }
+
+  .u-footer .u-layout-cell-1 {
+    min-height: 207px;
+  }
+
+  .u-footer .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-footer .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-footer .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (max-width: 575px) {
-  .u-footer .u-text-2 {
-    margin-left: 133px;
+  .u-footer .u-sheet-1 {
+    min-height: 196px;
+  }
+
+  .u-footer .u-layout-cell-1 {
+    min-height: 130px;
   }
 }
 
